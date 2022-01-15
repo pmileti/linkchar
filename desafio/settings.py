@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     #terceros
     'rest_framework',
     #propias
+    'apis',
 ]
 
 MIDDLEWARE = [
@@ -110,6 +111,7 @@ LANGUAGE_CODE = 'es'
 
 TIME_ZONE = 'UTC'
 
+CELERY_BROKER_URL = 'amqp://localhost'
 USE_I18N = True
 
 USE_TZ = True
